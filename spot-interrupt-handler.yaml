@@ -68,7 +68,7 @@ spec:
       serviceAccountName: spot-interrupt-handler
       containers:
       - name: spot-interrupt-handler
-        image: quay.io/ssro/k8spot-term-handler
+        image: kubeaws/kube-spot-termination-notice-handler:1.11.3-1
         imagePullPolicy: Always
         env:
         - name: POD_NAME
